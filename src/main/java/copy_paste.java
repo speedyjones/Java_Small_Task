@@ -11,7 +11,11 @@ public class copy_paste {
 
         try {
             System.out.println("Coping Started, Please Wait...");
+            // Copy File
             FileUtils.copyFile(source, dist);
+
+            // Copy Dir
+//            FileUtils.copyDirectory(source,dist);
             System.out.println("Coping Finished, Please Check...");
 
         } catch (IOException | IllegalArgumentException e) {
